@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js && echo [INFO] Starting normal mode..",
-    "test": "eslint --ignore-path .gitignore . ",
+    "test": "eslint .",
+    "lint": "eslint --fix .",
     "dev": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js dev && echo [INFO] Starting dev mode.."
   },
   "repository": {
@@ -29,7 +30,7 @@
     "@discordjs/uws": "^11.149.1",
     "chalk": "^2.4.2",
     "discord.js": "github:discordjs/discord.js",
-    "ffmpeg-binaries": "^4.0.0",
+    "ffmpeg-static": "^2.5.0",
     "node-opus": "^0.3.2"
   },
   "devDependencies": {
@@ -37,7 +38,9 @@
     "eslint": "6.1.0",
     "husky": "^3.0.1",
     "lint-staged": "^9.2.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1"
   },
   "husky": {
     "hooks": {
