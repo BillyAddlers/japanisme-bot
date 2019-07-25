@@ -1,0 +1,39 @@
+{
+  "name": "japanisme-bot",
+  "version": "1.0.0",
+  "description": "Collaboration Discord Bot Project with Japanisme Members https://discord.gg/GsBAb3W",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js && echo [INFO] Starting normal mode..",
+    "test": "eslint --ignore-path .gitignore . ",
+    "dev": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js dev && echo [INFO] Starting dev mode.."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japanisme/japanisme-bot.git"
+  },
+  "keywords": [
+    "japanisme",
+    "discord",
+    "bot",
+    "discord",
+    "js"
+  ],
+  "author": "Japanisme",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/japanisme/japanisme-bot/issues"
+  },
+  "homepage": "https://github.com/japanisme/japanisme-bot#readme",
+  "dependencies": {
+    "@discordjs/uws": "^11.149.1",
+    "chalk": "^2.4.2",
+    "discord.js": "github:discordjs/discord.js",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "6.1.0"
+  }
+}
