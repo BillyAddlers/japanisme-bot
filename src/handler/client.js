@@ -6,6 +6,7 @@ class Japanisme extends Client {
     super(opt);
 
     this.log = new Logger();
+    this.config = require("../config.json");
   }
 }
 
