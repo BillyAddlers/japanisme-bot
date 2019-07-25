@@ -14,6 +14,6 @@ Collaboration Discord Bot Projects with Japanisme Member.
 
 > Coming soon...
 
-# command List and Usage
+# Command List and Usage
 
 > Coming soon...
