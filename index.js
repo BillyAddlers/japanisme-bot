@@ -1,6 +1,4 @@
 const Logger = require("./src/util/console");
-const log = new Logger();
-
 require("dotenv").config();
 
 if (process.argv[2] === "dev") {
@@ -8,6 +6,6 @@ if (process.argv[2] === "dev") {
     process.env.DEV = "dev";
     require("./src/shards");
 } else {
-   Logger.info("Bot ini sedang dalam normal mode !");
+    Logger.info("Bot ini sedang dalam normal mode !");
     require("./src/shards");
 }
