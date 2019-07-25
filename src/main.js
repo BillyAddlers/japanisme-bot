@@ -1,5 +1,5 @@
-const { Japanisme } = require("./handler/client");
-const client = new Japanisme({
+const JapanismeClient = require("./handler/JapanismeClient");
+const client = new JapanismeClient({
     disableEveryone: true,
     fetchAllMembers: false
 });
