@@ -1,4 +1,4 @@
-const { Japanisme } = require('./handler/client');
+const { Japanisme } = require("./handler/client");
 const client = new Japanisme({
     disableEveryone: true,
     fetchAllMembers: false

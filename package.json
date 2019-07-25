@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js && echo [INFO] Starting normal mode..",
     "test": "eslint .",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
     "dev": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js dev && echo [INFO] Starting dev mode.."
   },
   "repository": {
