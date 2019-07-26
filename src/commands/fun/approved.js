@@ -18,7 +18,7 @@ class ApprovedCommand extends CommandCore {
 	}
 	execute(client, message, args, thread) {
 		const user = message.mentions.users.first() || client.users.get(args[0]) || message.author;
-		const { body } = thread.sync(get(`https://emilia-api.glitch.me/api/approved?image=${user.displayAvatarURL({ format: "png", size: 2048 })}`));
+		const { body } = thread.sync(get(`https://emilia-api.glitch.me/api/approved?image=${user.displayAvatarURL({ format: "png", size: 1024 })}`));
 		return message.channel.send({ files: [ { attachment: body } ] });
 	}
 }
