@@ -4,6 +4,7 @@ const { join, resolve } = require("path");
 const Japanisme = require("./JapanismeClient");
 const TreeMap = require("../util/treemap");
 const LoggingFactory = require("./loggingfactory");
+const Util = require("../util/util");
 
 module.exports = class CommandClient extends Japanisme {
   constructor(options, djsopt) {
@@ -12,6 +13,7 @@ module.exports = class CommandClient extends Japanisme {
     this.commands = new TreeMap();
     this.aliases = new TreeMap();
     this.cooldowns = new TreeMap();
+    this.util = new Util();
   }
 
   /**

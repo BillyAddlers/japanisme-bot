@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js && echo [INFO] Starting normal mode..",
-    "test": "eslint .",
+    "test": "eslint --ignore-path .gitignore .",
     "lint": "eslint --fix .",
     "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
     "dev": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js dev && echo [INFO] Starting dev mode.."
@@ -34,6 +34,8 @@
     "discord.js": "github:discordjs/discord.js",
     "ffmpeg-static": "^2.5.0",
     "node-opus": "^0.3.2",
+    "node-superfetch": "^0.1.9",
+    "os": "^0.1.1",
     "synchronous-ify": "github:jDevxyz/synchronous-ify"
   },
   "devDependencies": {

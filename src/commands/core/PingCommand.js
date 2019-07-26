@@ -7,7 +7,7 @@ module.exports = class PingCommand extends CommandCore {
       name: "Ping",
       description: "A simple command to ping latency of Discord API",
       usage: "ping",
-      cooldown: 0,
+      cooldown: 5,
       aliases: [],
       devOnly: false,
       guildOnly: false,
