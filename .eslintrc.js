@@ -80,7 +80,7 @@ module.exports = {
     "no-duplicate-imports": "error",
     "no-useless-computed-key": "error",
     "no-useless-constructor": "error",
-    "prefer-const": "error",
+    "prefer-const": "warn",
     "prefer-destructuring": [
       "error",
       {
