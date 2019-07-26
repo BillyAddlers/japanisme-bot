@@ -67,3 +67,8 @@ typings/
 .vscode
 
 .gitignore
+
+# maybe we can call them "cache", extension type : folder || and maybe we'll never use glitch
+.config 
+
+.glitch-assets
