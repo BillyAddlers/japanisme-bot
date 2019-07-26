@@ -1,7 +1,7 @@
 const CommandCore = require("../../handler/commandcore");
 const { MessageEmbed } = require("discord.js");
 
-module.exports = class Ping extends CommandCore {
+module.exports = class PingCommand extends CommandCore {
   constructor() {
     super({
       name: "Ping",
