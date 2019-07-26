@@ -7,6 +7,7 @@
     "start": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js && echo [INFO] Starting normal mode..",
     "test": "eslint .",
     "lint": "eslint --fix .",
+    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
     "dev": "npm test && echo [INFO] Tidak ada error ditemukan, melanjutkan node... && node index.js dev && echo [INFO] Starting dev mode.."
   },
   "repository": {
@@ -38,12 +39,13 @@
   "devDependencies": {
     "dotenv": "^8.0.0",
     "eslint": "6.1.0",
-    "husky": "^3.0.1",
-    "lint-staged": "^9.2.1",
-    "prettier": "1.18.2",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "mocha": "^6.2.0"
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
+    "mocha": "^6.2.0",
+    "prettier": "1.18.2"
   },
   "husky": {
     "hooks": {
@@ -56,6 +58,7 @@
       "git add"
     ],
     "*.js": [
+      "eslint --fix",
       "git add"
     ]
   }

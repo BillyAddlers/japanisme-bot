@@ -18,8 +18,9 @@ class LoggingFactory extends EventEmitter {
 
     let packagename;
     if (typeof classpath === "string") packagename = classpath.toString();
+    /* eslint-disable */
     this.packagename = function() {
-      //eslint-disable-line
+      /* eslint-enable */
       if (typeof classpath === "function") return classpath.name;
       if (typeof classpath === "object") return classpath.constructor.name;
       return packagename;

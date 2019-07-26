@@ -11,7 +11,7 @@ class Logger {
       )} [${chalk.magenta(data.name)}||${chalk.red(data.pid)}] ${chalk.green(
         " INFO : "
       )} ${data.message}`
-    ); // eslint-disable-line
+    );
   }
 
   static debug(data) {
@@ -24,7 +24,7 @@ class Logger {
       )} [${chalk.magenta(data.name)}||${chalk.red(data.pid)}] ${chalk.blue(
         " DEBUG: "
       )} ${data.message}`
-    ); // eslint-disable-line
+    );
   }
 
   static error(reason) {
