@@ -1,6 +1,5 @@
 const LoggingFactory = require("./handler/loggingfactory");
 const { ShardingManager } = require("discord.js");
-const Logger = require("./util/console");
 const shards = new ShardingManager("./src/main.js", {
   totalShards: "auto",
   token: process.env.DEV ? process.env.DEV_TOKEN : process.env.TOKEN

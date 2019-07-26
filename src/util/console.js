@@ -26,16 +26,6 @@ class Logger {
       )} ${data.message}`
     ); // eslint-disable-line
   }
-  static info(reason) {
-    return console.info(
-      `${chalk.red(
-        `[${new Date()
-          .toString()
-          .split(" ", 5)
-          .join(" ")}]`
-      )} ${chalk.blue(" INFO: ")} ${reason}`
-    );
-  }
 
   static error(reason) {
     return console.error(
