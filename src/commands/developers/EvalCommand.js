@@ -1,6 +1,6 @@
 const CommandCore = require("../../handler/commandcore");
 const Discord = require("discord.js");
-const Embed = require("discord.js").MessageEmbed;
+const { MessageEmbed } = require("discord.js");
 const { get, post } = require("node-superfetch");
 const { resolve, join } = require("path");
 const os = require("os");
@@ -25,7 +25,7 @@ module.exports = class EvalCommand extends CommandCore {
     let msg = message; // eslint-disable-line prefer-const
     let bot = client; // eslint-disable-line prefer-const
 
-    const embed = new Embed()
+    const embed = new MessageEmbed()
       .setColor("RANDOM")
       .setAuthor("Evaluation")
       .addField("Input", "```js\n" + args.join(" ") + "```"); // eslint-disable-line prefer-template
