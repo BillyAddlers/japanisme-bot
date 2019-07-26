@@ -9,6 +9,10 @@ module.exports = client => {
   const status = List.status[getRandom(List.status)];
   let randomPresence = getRandom(presence);
   Logger.info("Starting Interval Status...");
+  client.user.setPresence({
+    activity: { name: presence[randomPresence] },
+    status: status
+  });
   setInterval(() => {
     while (map.get("presence") === randomPresence) {
       randomPresence = getRandom(presence);

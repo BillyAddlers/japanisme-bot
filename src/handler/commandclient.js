@@ -1,6 +1,6 @@
 global.Promise = require("bluebird");
 const fs = Promise.promisifyAll(require("fs"));
-const { join } = require("path");
+const { join, resolve } = require("path");
 const Japanisme = require("./JapanismeClient");
 const TreeMap = require("../util/treemap");
 const LoggingFactory = require("./loggingfactory");
@@ -33,6 +33,17 @@ module.exports = class CommandClient extends Japanisme {
       for (const file of commands) {
         const Command = require(`../${this.path}/${Module}/${file}`);
         const resolved = new Command();
+        if (resolved.constructor.name !== file.split(".")[0]) {
+          const errors = new Error();
+          errors.name = "ANOMALY_CLASS_FILENAME";
+          errors.message = `[${
+            file.split(".")[0]
+          }] classname is not found in ${resolve(
+            __dirname,
+            `../${this.path}/${Module}/${file}`
+          )}`;
+          throw errors;
+        }
         resolved.category = Module;
         logger.print(`Resolving command ${resolved.name}`);
         this.commands.set(resolved.name.toLowerCase(), resolved);
