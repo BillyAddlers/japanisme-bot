@@ -67,3 +67,6 @@ typings/
 .vscode
 
 .gitignore
+
+# maybe we can call them "cache", extension type : folder
+.config 
