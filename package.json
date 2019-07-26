@@ -44,7 +44,6 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "mocha": "^6.2.0"
-    "eslint-plugin-promise": "^4.2.1"
   },
   "husky": {
     "hooks": {
@@ -57,7 +56,6 @@
       "git add"
     ],
     "*.js": [
-      "eslint --fix",
       "git add"
     ]
   }
