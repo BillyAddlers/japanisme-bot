@@ -1,7 +1,7 @@
 global.Promise = require("bluebird");
 const fs = Promise.promisifyAll(require("fs"));
 const { join } = require("path");
-const { Japanisme } = require("./client");
+const Japanisme = require("./JapanismeClient");
 const TreeMap = require("../util/treemap");
 const LoggingFactory = require("./loggingfactory");
 
