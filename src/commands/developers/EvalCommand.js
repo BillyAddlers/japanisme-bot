@@ -27,6 +27,7 @@ module.exports = class EvalCommand extends CommandCore {
 
     const embed = new Embed()
       .setColor("RANDOM")
+      .setAuthor("Evaluation")
       .addField("Input", "```js\n" + args.join(" ") + "```"); // eslint-disable-line prefer-template
 
     try {
