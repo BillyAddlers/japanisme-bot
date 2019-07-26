@@ -13,6 +13,9 @@ module.exports = {
         "node"
     ],
     rules: {
+        "no-console": 0,
+        "no-process-env": 0,
+        "no-unused-vars": 0,
         "no-extra-parens": [
             "warn",
             "all",
@@ -49,16 +52,6 @@ module.exports = {
         ],
         "dot-notation": "error",
         eqeqeq: "error",
-        "no-console": [
-            "error",
-            {
-                allow: [
-                    "log",
-                    "warn",
-                    "error"
-                ]
-            }
-        ],
         "no-empty-function": "error",
         "no-floating-decimal": "error",
         "no-implied-eval": "error",
@@ -89,7 +82,6 @@ module.exports = {
         "no-mixed-requires": "error",
         "no-new-require": "error",
         "no-path-concat": "error",
-        "no-process-env": "error",
         "array-bracket-spacing": "error",
         "block-spacing": "error",
         "brace-style": [
