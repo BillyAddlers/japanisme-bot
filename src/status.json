@@ -1,0 +1,9 @@
+{
+  "dev_presence": ["In development!", "Maintenance Mode, thanks."],
+  "presence": [
+    "a!help | Serving {server} servers.",
+    "a!help | Type help for see all commands.",
+    "a!help | Nothing"
+  ],
+  "status": ["dnd", "idle", "online"]
+}

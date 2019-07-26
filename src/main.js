@@ -4,4 +4,5 @@ const client = new CommandClient({
 });
 client.build();
 
+require("./handler/events")(client);
 client.login(process.env.DEV ? process.env.DEV_TOKEN : process.env.TOKEN);
