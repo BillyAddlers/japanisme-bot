@@ -8,6 +8,25 @@ class Logger {
 
     static error(reason) {
         return console.error(`${chalk.red(`[${new Date().toString().split(" ", 5).join(" ")}]`)} ${chalk.red(" ERROR: ")} ${reason}`);
+        return console.info(
+            `${chalk.red(
+                `[${new Date()
+                    .toString()
+                    .split(" ", 5)
+                    .join(" ")}]`
+            )} ${chalk.blue(" INFO: ")} ${reason}`
+        );
+    }
+
+    static error(reason) {
+        return console.error(
+            `${chalk.red(
+                `[${new Date()
+                    .toString()
+                    .split(" ", 5)
+                    .join(" ")}]`
+            )} ${chalk.red(" ERROR: ")} ${reason}`
+        );
     }
 
 }
