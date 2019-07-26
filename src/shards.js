@@ -1,9 +1,10 @@
-const Logger = require("./util/console");
+const LoggingFactory = require("./handler/loggingfactory");
 const { ShardingManager } = require("discord.js");
 const shards = new ShardingManager("./src/main.js", {
     totalShards: "auto",
     token: process.env.DEV ? process.env.DEV_TOKEN : process.env.TOKEN
 });
+const Logger = new LoggingFactory("ShardingManager");
 
 process.on("unhandledRejection", err => {
     Logger.error(`Error handler caught an error : \n${err.stack}`);

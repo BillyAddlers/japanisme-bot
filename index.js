@@ -1,6 +1,6 @@
 require("dotenv").config();
-const { Logger } = require("./src/util/console");
-const log = new Logger();
+const LoggingFactory = require("./src/handler/loggingfactory");
+const log = new LoggingFactory("MainProcess");
 
 if (process.argv[2] === "dev") {
     log.info("Bot ini sedang dalam dev mode !");
