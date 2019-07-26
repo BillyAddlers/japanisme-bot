@@ -12,4 +12,4 @@ class Japanisme extends Client {
 
 }
 
-module.exports = { Japanisme };
+module.exports = Japanisme;
